@@ -1,0 +1,6 @@
+README.md
+setup.py
+image_size_increaser.egg-info/PKG-INFO
+image_size_increaser.egg-info/SOURCES.txt
+image_size_increaser.egg-info/dependency_links.txt
+image_size_increaser.egg-info/top_level.txt
