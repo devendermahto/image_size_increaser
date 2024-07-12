@@ -8,7 +8,7 @@ def increase_image_size(file_path, min_size_mb=2, max_size_mb=5):
     metadata = str_repeat("metadata1234567890", 50000)
     new_image_data = image_data + metadata.encode()
 
-    output_path = os.path.splitext(file_path)[0] + "IMG" + os.path.splitext(file_path)[1]
+    output_path = os.path.splitext(file_path)[0]+ os.path.splitext(file_path)[1]
     with open(output_path, 'wb') as f:
         f.write(new_image_data)
 
@@ -23,7 +23,7 @@ def increase_image_size(file_path, min_size_mb=2, max_size_mb=5):
         new_image_data = new_image_data[:-1000]
         with open(output_path, 'wb') as f:
             f.write(new_image_data)
-
+    print(output_path)
     return output_path
 
 def str_repeat(string, times):
